@@ -61,20 +61,6 @@ export default function Receipts({ navigation }) {
     // console.log(reduced, reducedArr);
   }, [isFocused]);
 
-  // console.log(allDebts);
-  // console.log(allDebts);
-  // console.log(allDebts);
-  // console.log(allDebts);
-  // console.log(allDebts);
-
-  // reduced.map((item) => {
-  //   console.log(item);
-  // });
-  // const marr = reduced;
-  // setAll(marr);
-  // // console.log(marr);
-  // console.log("alllllll", all);
-
   return (
     <View style={styles.container}>
       <Image source={require(`../assets/BG.png`)} style={styles.image}></Image>
@@ -97,7 +83,7 @@ export default function Receipts({ navigation }) {
       >
         Receipts
       </Text>
-      <TouchableOpacity style={styles.loginBtn} onPress={selectImage}>
+      <TouchableOpacity style={styles.loginBtn} onPress={() => navigation.navigate("AddReceipts")}>
         <Text style={styles.loginText}>+ Add New Receipt</Text>
       </TouchableOpacity>
     </View>
@@ -115,12 +101,13 @@ const styles = StyleSheet.create({
     flex: 1,
     height: 70,
     marginTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
+    alignItems:"center",
   },
   loginBtn: {
     position: "absolute",
     width: 320,
     height: 56,
-    left: 20,
+    // left: 20,
     top: "85%",
     backgroundColor: "#7F3DFF",
     borderRadius: 16,
