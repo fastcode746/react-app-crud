@@ -17,6 +17,7 @@ import AddBorrow from "./Screens/AddBorrow";
 import BorrowDetails from "./Screens/BorrowDetails";
 import BorrowScreen from "./Screens/BorrowScreen";
 import Profile from "./Screens/Profile";
+import Receipts from "./Screens/Receipts";
 const Stack = createNativeStackNavigator();
 export default function App() {
   return (
@@ -96,6 +97,11 @@ export default function App() {
           options={{ headerShown: false }}
           name="Profile"
           component={Profile}
+        />
+        <Stack.Screen
+          options={{ headerShown: false }}
+          name="Receipts"
+          component={Receipts}
         />
       </Stack.Navigator>
     </NavigationContainer>

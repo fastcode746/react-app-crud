@@ -107,6 +107,12 @@ export default function Dashboard({ navigation }) {
           onPress={() => navigation.navigate("Profile")}
           style={styles.profile}
         ></TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("Receipts")}
+          style={styles.receiptsBtn}
+        >
+          <Text style={{color: "white"}}>Add Receipts</Text>
+        </TouchableOpacity>
         <Text
           style={{
             width: "100%",
@@ -277,7 +283,7 @@ const styles = StyleSheet.create({
     paddingTop: 20,
     backgroundColor: "#fff",
     flex: 0.5,
-    marginTop: StatusBar.currentHeight
+    marginTop: StatusBar.currentHeight,
   },
   options: {
     backgroundColor: "#f5f0ff",
@@ -296,6 +302,20 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: 20,
     left: 16,
+  },
+  receiptsBtn: {
+    backgroundColor: "#7F3DFF",
+    borderWidth: 1,
+    borderColor: "#7F3DFF",
+    width: 100,
+    height: 50,
+    borderRadius: 50,
+    position: "absolute",
+    top: 20,
+    right: 16,
+    justifyContent: "center",
+    alignItems: "center",
+    
   },
   income: {
     width: 160,
