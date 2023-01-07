@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Dashboard from "./Screens/Dashboard";
 import IncomeScreen from "./Screens/IncomeScreen";
 import AddIncome from "./Screens/AddIncome";
+import AddReceipts from "./Screens/AddReceipts";
 import IncomeDetail from "./Screens/IncomeDetail";
 import TransactionDetails from "./Screens/TransactionDetails";
 import EditTransactions from "./Screens/EditTransactions";
@@ -102,6 +103,11 @@ export default function App() {
           options={{ headerShown: false }}
           name="Receipts"
           component={Receipts}
+        />
+        <Stack.Screen
+          options={{ headerShown: false }}
+          name="AddReceipts"
+          component={AddReceipts}
         />
       </Stack.Navigator>
     </NavigationContainer>
