@@ -90,7 +90,7 @@ export default function IncomeScreen({ navigation }) {
           color: "black",
         }}
       >
-        ₹{lent}
+        MYR  {lent}
       </Text>
 
       <View style={styles.tasksWrapper}>

@@ -56,7 +56,7 @@ export default function BorrowDetails({ route, navigation }) {
       <View style={styles.spentCard}>
         <Text style={styles.subheading}>Total Amount you owe to {name2}</Text>
         <View>
-          <Text style={styles.paisa}>₹{total}</Text>
+          <Text style={styles.paisa}>MYR  {total}</Text>
         </View>
       </View>
       <ScrollView>
@@ -73,7 +73,7 @@ export default function BorrowDetails({ route, navigation }) {
             <View style={styles.amts}>
               <View style={{ flex: 0.8 }}>
                 <Text style={{ fontWeight: "600", fontSize: 30 }}>
-                  ₹{item.amount}
+                  MYR  {item.amount}
                 </Text>
                 <View style={{ marginTop: "auto" }}>
                   <Text style={styles.subheading2}>Description: </Text>

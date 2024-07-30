@@ -22,7 +22,7 @@ export default function DebtorCard(props, { navigation }) {
       </View>
       <View style={styles.moneyWrapper}>
         <View style={styles.moneyCard}>
-          <Text style={styles.moneyText}>₹{props.money}</Text>
+          <Text style={styles.moneyText}>MYR  {props.money}</Text>
         </View>
       </View>
     </View>

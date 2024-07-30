@@ -112,7 +112,7 @@ import {
             color: "black",
           }}
         >
-          ₹{borrow}
+          MYR  {borrow}
         </Text>
   
         <View style={styles.tasksWrapper}>

@@ -112,7 +112,7 @@ export default function DebtScreen({ navigation }) {
           color: "black",
         }}
       >
-        ₹{lent}
+        MYR  {lent}
       </Text>
 
       <View style={styles.tasksWrapper}>

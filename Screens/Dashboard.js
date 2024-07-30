@@ -103,16 +103,7 @@ export default function Dashboard({ navigation }) {
     <>
       <View style={styles.container}>
         {/* <View style={styles.profile}></View> */}
-        <TouchableOpacity
-          onPress={() => navigation.navigate("Profile")}
-          style={styles.profile}
-        ></TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => navigation.navigate("Receipts")}
-          style={styles.receiptsBtn}
-        >
-          <Text style={{color: "white"}}>Add Receipts</Text>
-        </TouchableOpacity>
+  
         <Text
           style={{
             width: "100%",
@@ -137,7 +128,7 @@ export default function Dashboard({ navigation }) {
             color: "#161719",
           }}
         >
-          ₹{income - expense}
+          MYR  {income - expense}
         </Text>
         <TouchableOpacity
           onPress={() => navigation.navigate("Income")}
@@ -161,7 +152,7 @@ export default function Dashboard({ navigation }) {
               fontSize: 30,
             }}
           >
-            ₹{income}
+            MYR  {income}
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
@@ -186,7 +177,7 @@ export default function Dashboard({ navigation }) {
               fontSize: 30,
             }}
           >
-            ₹{expense}
+            MYR  {expense}
           </Text>
         </TouchableOpacity>
         <View style={styles.options}>
@@ -212,7 +203,7 @@ export default function Dashboard({ navigation }) {
                 fontSize: 30,
               }}
             >
-              ₹{lent}
+              MYR  {lent}
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -237,7 +228,7 @@ export default function Dashboard({ navigation }) {
                 fontSize: 30,
               }}
             >
-              ₹{borrow}
+              MYR  {borrow}
             </Text>
           </TouchableOpacity>
           <Text style={styles.transaction}>Recent Transcations</Text>

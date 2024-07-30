@@ -114,7 +114,7 @@ export default function TransactionDetails({ navigation, route }) {
           </Text>
         </TouchableOpacity>
         <Text style={styles.headerText}>Detail Transaction</Text>
-        <Text style={styles.amount}>₹{transaction.amount}</Text>
+        <Text style={styles.amount}>MYR  {transaction.amount}</Text>
       </View>
       <View style={styles.detailCard}>
         <View

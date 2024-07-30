@@ -101,7 +101,7 @@ export default function AddExpenses({ navigation }) {
       <View style={styles.tasksWrapper}>
         <View style={{ flex: 1 }}>
           <View style={{ flex: 1 }}>
-            <Text style={styles.sectionTitle}>Income</Text>
+            <Text style={styles.sectionTitle}>Expenses</Text>
           </View>
           <View>
             <View>
