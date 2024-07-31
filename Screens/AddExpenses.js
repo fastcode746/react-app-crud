@@ -108,7 +108,7 @@ export default function AddExpenses({ navigation }) {
               <Text style={styles.howMuch}>Amount</Text>
             </View>
             <View style={styles.inputDebt}>
-              <Text style={{ fontSize: 50, color: "#ffffff" }}>Rs.</Text>
+              <Text style={{ fontSize: 50, color: "#ffffff" }}>MYR.</Text>
               <View>{inputAmt}</View>
             </View>
           </View>
